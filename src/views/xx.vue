@@ -58,12 +58,6 @@ export default {
         return res
       })
       const edge=await getLinks().then(res=>{        
-        res=res.map(item=>{
-          return {
-            ...item,
-            from:item.test
-          }
-        })
         return res
       })
       

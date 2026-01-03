@@ -60,3 +60,19 @@ export function getTest2(){
         method:get
     })    
 }
+
+const url6='/api/family'
+export function getFamily(){
+    return request({
+        url:url6,
+        method:'get'
+    })    
+}
+
+const url7='/api/upload'
+export function getUpload(){
+    return request({
+        url:url7,
+        method:'post'
+    })    
+}

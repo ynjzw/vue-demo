@@ -1,6 +1,7 @@
 <template>
   <!-- 图表容器：设置宽度和高度 -->
   <div ref="chartRef" style="width: 600px; height: 400px;"></div>
+  <RelationGraph />
 </template>
  
 <script setup>
@@ -8,7 +9,7 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 // 引入 echarts 库
 import * as echarts from 'echarts'
- 
+ import RelationGraph from '../components/RelationGraph.vue'
 // 获取 DOM 元素的引用（用于初始化图表）
 const chartRef = ref(null)
 // 存储 ECharts 实例
